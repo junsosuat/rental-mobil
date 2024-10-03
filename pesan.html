@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gadged Shop Online</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <ul>
+          <li><a href="index.html">daftar produk</a></li>
+          <li><a href="pesan.html">pesan Produk</a></li>
+          <li><a href="login.html">login password</a></li>
+          <li><a href="pembayaran.html">Pembyaran Produk</a></li>
+        </ul>
+      </ul>
+    </nav>
+  </body>
+  <header>
+    <h1>SILAHKAN PILIH PRODUK DIBAWAH UNTUK MEMESAN BARANG</h1>
+  </header>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gadged Shop Online</title>
+    <style>
+      /* Styling CSS dapat ditambahkan di sini */
+    </style>
+  </head>
+  <body>
+    <header>
+      <p>PILIH PRODUK</p>
+    </header>
+  </body>
+</html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pemesanan Produk</title>
+  </head>
+  <body>  
+    <select id="produk">
+      <option value="laptop Lenovo LOQ 15......Rp34.099.000">
+        produk1</option>
+      <option value="laptop Lenovo Yoga Book 9i.....Rp14.499.000">
+        produk2
+      </option>
+      <option value="laptop Lenovo IdeaPad Slim 5......Rp9.599.000">
+        produk3
+      </option>
+      <option value="ASUS Zenbook S13 OLED UX5304.......Rp23.999.000.">
+        produk4
+      </option>
+    </option>
+    <option value="ASUS Zenbook Pro 14 Duo OLED UX8402.......RpRp 29.999.000">
+      produk5
+    </option>
+  </option>
+  <option value="ASUS VivoBook 15 A516MAO N4020.......RpRp 4.599.000">
+    produk6
+  </option>
+</option>
+<option value="Laptop Alldocube Kbook Lite.......Rp 3.600.000">
+  produk7
+</option>
+</option>
+<option value="Acer Swift 3 SF313-52.......Rp 8.800.000">
+  produk8
+</option>
+    </select>
+    <button onclick="tambahPesanan()">Tambah Pesanan</button>
+
+    <h2>Pesanan Anda</h2>
+    <ul id="daftar-pesanan"></ul>
+    <ul id="pesanan-pelanggan"></ul>
+
+    <script>
+      // Variabel untuk menyimpan pesanan pelanggan
+      var pesananPelanggan = [];
+
+      function tambahPesanan() {
+        var produk = document.getElementById("produk").value;
+        pesananPelanggan.push(produk);
+
+        // Menampilkan pesanan pelanggan pada halaman
+        var daftarPesanan = document.getElementById("daftar-pesanan");
+        daftarPesanan.innerHTML = "";
+        pesananPelanggan.forEach(function (item) {
+          var li = document.createElement("li");
+          li.textContent = item;
+          daftarPesanan.appendChild(li);
+        });
+      }
+
+      function tampilkanPesananPelanggan() {
+        // Menampilkan pesanan pelanggan kepada pemilik
+        var pesananPelangganElement =
+          document.getElementById("pesanan-pelanggan");
+        pesananPelangganElement.innerHTML = "";
+        pesananPelanggan.forEach(function (item) {
+          var li = document.createElement("li");
+          li.textContent = item;
+          pesananPelangganElement.appendChild(li);
+        });
+      }
+
+      // Memanggil fungsi untuk menampilkan pesanan pelanggan
+      tampilkanPesananPelanggan();
+    </script>
+  </body>
+</html>

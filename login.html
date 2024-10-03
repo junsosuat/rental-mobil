@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gadged Shop Online</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <ul>
+          <li><a href="index.html">daftar produk</a></li>
+          <li><a href="pesan.html">pesan Produk</a></li>
+          <li><a href="login.html">login password</a></li>
+          <li><a href="pembayaran.html">Pembyaran Produk</a></li>
+        </ul>
+      </ul>
+    </nav>
+  </body>
+  <header>
+    <h1>LOGIN PASWORD</h1>
+  </header>
+</html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Halaman Login</title>
+  </head>
+  <body>
+    <h2>LOGIN</h2>
+    <form id="loginForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" /><br /><br />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" /><br /><br />
+
+      <input type="button" value="Masuk" onclick="checkLogin()" />
+    </form>
+
+    <p id="message"></p>
+
+    <script>
+      function checkLogin() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        // Gantilah ini dengan kode otentikasi yang sesuai
+        if (username === "ajhun_suat" && password === "16062002") {
+          document.getElementById("message").innerHTML = "Login berhasil!";
+        } else {
+          document.getElementById("message").innerHTML =
+            "Login gagal. Periksa kembali username dan password Anda.";
+        }
+      }
+    </script>
+  </body>
+</html>

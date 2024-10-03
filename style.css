@@ -1,0 +1,49 @@
+h1 {
+    font-size: 24px;
+    color: #e20606;
+    text-align: center;
+}
+
+/* Gaya untuk bagian pemilihan produk */
+h2 {
+    font-size: 18px;
+    color: #6425ca;
+}
+
+select {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #d9dadf;
+    border-radius: 5px;
+}
+
+button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #c5c8d9;
+    color: #8f3d3d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Gaya untuk daftar pesanan pelanggan */
+ul {
+    list-style-type: none;
+}
+
+/* Gaya untuk elemen daftar */
+li {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* Gaya untuk tombol "Tampilkan Pesanan Pelanggan" */
+#pesanan-pelanggan {
+    font-size: 18px;
+    color: #ede9e9;
+    border: 1px solid #0a0a0a;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
